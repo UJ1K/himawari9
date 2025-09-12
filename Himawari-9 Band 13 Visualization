@@ -3,19 +3,20 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "7a5a172b",
+   "id": "6e48ec04",
    "metadata": {
+    "_kg_hide-input": true,
     "execution": {
-     "iopub.execute_input": "2025-09-12T07:12:03.984786Z",
-     "iopub.status.busy": "2025-09-12T07:12:03.984477Z",
-     "iopub.status.idle": "2025-09-12T07:12:15.662252Z",
-     "shell.execute_reply": "2025-09-12T07:12:15.660750Z"
+     "iopub.execute_input": "2025-09-12T07:13:23.808247Z",
+     "iopub.status.busy": "2025-09-12T07:13:23.807842Z",
+     "iopub.status.idle": "2025-09-12T07:13:35.003882Z",
+     "shell.execute_reply": "2025-09-12T07:13:35.002796Z"
     },
     "papermill": {
-     "duration": 11.683467,
-     "end_time": "2025-09-12T07:12:15.664059",
+     "duration": 11.201765,
+     "end_time": "2025-09-12T07:13:35.005568",
      "exception": false,
-     "start_time": "2025-09-12T07:12:03.980592",
+     "start_time": "2025-09-12T07:13:23.803803",
      "status": "completed"
     },
     "tags": []
@@ -39,7 +40,7 @@
       "  Downloading pykdtree-1.4.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)\r\n",
       "Collecting pyorbital (from satpy)\r\n",
       "  Downloading pyorbital-1.10.2-py3-none-any.whl.metadata (42 kB)\r\n",
-      "\u001b[2K     \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m42.4/42.4 kB\u001b[0m \u001b[31m1.5 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K     \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m42.4/42.4 kB\u001b[0m \u001b[31m1.4 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
       "\u001b[?25hRequirement already satisfied: pyproj>=2.2 in /usr/local/lib/python3.11/dist-packages (from satpy) (3.7.1)\r\n",
       "Collecting pyresample>=1.24.0 (from satpy)\r\n",
       "  Downloading pyresample-1.34.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)\r\n",
@@ -91,24 +92,24 @@
       "Requirement already satisfied: intel-cmplr-lib-ur==2024.2.0 in /usr/local/lib/python3.11/dist-packages (from intel-openmp<2026,>=2024->mkl->numpy>=1.21->satpy) (2024.2.0)\r\n",
       "Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.11/dist-packages (from python-dateutil>=2.8.2->pandas>=2.1->xarray>=0.14.1->satpy) (1.17.0)\r\n",
       "Downloading satpy-0.58.0-py3-none-any.whl (1.9 MB)\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m1.9/1.9 MB\u001b[0m \u001b[31m40.6 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m1.9/1.9 MB\u001b[0m \u001b[31m41.2 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
       "\u001b[?25hDownloading pyresample-1.34.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.7 MB)\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m4.7/4.7 MB\u001b[0m \u001b[31m14.8 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m4.7/4.7 MB\u001b[0m \u001b[31m58.8 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
       "\u001b[?25hDownloading pykdtree-1.4.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (456 kB)\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m456.5/456.5 kB\u001b[0m \u001b[31m9.5 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m456.5/456.5 kB\u001b[0m \u001b[31m20.2 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
       "\u001b[?25hDownloading trollimage-1.27.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (699 kB)\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m699.9/699.9 kB\u001b[0m \u001b[31m28.3 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m699.9/699.9 kB\u001b[0m \u001b[31m29.1 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
       "\u001b[?25hDownloading donfig-0.8.1.post1-py3-none-any.whl (21 kB)\r\n",
       "Downloading pyorbital-1.10.2-py3-none-any.whl (118 kB)\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m118.6/118.6 kB\u001b[0m \u001b[31m5.3 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m118.6/118.6 kB\u001b[0m \u001b[31m4.7 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
       "\u001b[?25hDownloading trollsift-0.6.0-py3-none-any.whl (32 kB)\r\n",
       "Downloading zarr-3.1.2-py3-none-any.whl (261 kB)\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m261.0/261.0 kB\u001b[0m \u001b[31m12.0 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m261.0/261.0 kB\u001b[0m \u001b[31m12.4 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
       "\u001b[?25hDownloading numcodecs-0.16.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (8.8 MB)\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m8.8/8.8 MB\u001b[0m \u001b[31m77.8 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m8.8/8.8 MB\u001b[0m \u001b[31m27.8 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
       "\u001b[?25hDownloading configobj-5.0.9-py2.py3-none-any.whl (35 kB)\r\n",
       "Downloading crc32c-2.7.1-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (53 kB)\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m53.7/53.7 kB\u001b[0m \u001b[31m2.4 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m53.7/53.7 kB\u001b[0m \u001b[31m2.3 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
       "\u001b[?25hInstalling collected packages: trollsift, donfig, crc32c, configobj, numcodecs, pykdtree, zarr, trollimage, pyresample, pyorbital, satpy\r\n",
       "Successfully installed configobj-5.0.9 crc32c-2.7.1 donfig-0.8.1.post1 numcodecs-0.16.2 pykdtree-1.4.3 pyorbital-1.10.2 pyresample-1.34.2 satpy-0.58.0 trollimage-1.27.0 trollsift-0.6.0 zarr-3.1.2\r\n",
       "Note: you may need to restart the kernel to use updated packages.\n"
@@ -122,44 +123,20 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "c31239dc",
+   "id": "4a43086a",
    "metadata": {
+    "_kg_hide-input": true,
     "execution": {
-     "iopub.execute_input": "2025-09-12T07:12:15.675543Z",
-     "iopub.status.busy": "2025-09-12T07:12:15.675143Z",
-     "iopub.status.idle": "2025-09-12T07:12:15.680331Z",
-     "shell.execute_reply": "2025-09-12T07:12:15.679337Z"
+     "iopub.execute_input": "2025-09-12T07:13:35.016366Z",
+     "iopub.status.busy": "2025-09-12T07:13:35.015422Z",
+     "iopub.status.idle": "2025-09-12T07:13:41.391637Z",
+     "shell.execute_reply": "2025-09-12T07:13:41.390198Z"
     },
     "papermill": {
-     "duration": 0.012737,
-     "end_time": "2025-09-12T07:12:15.681924",
+     "duration": 6.383148,
+     "end_time": "2025-09-12T07:13:41.393372",
      "exception": false,
-     "start_time": "2025-09-12T07:12:15.669187",
-     "status": "completed"
-    },
-    "tags": []
-   },
-   "outputs": [],
-   "source": [
-    "# pip install "
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 3,
-   "id": "5b49f724",
-   "metadata": {
-    "execution": {
-     "iopub.execute_input": "2025-09-12T07:12:15.692000Z",
-     "iopub.status.busy": "2025-09-12T07:12:15.691681Z",
-     "iopub.status.idle": "2025-09-12T07:12:21.149673Z",
-     "shell.execute_reply": "2025-09-12T07:12:21.148421Z"
-    },
-    "papermill": {
-     "duration": 5.465011,
-     "end_time": "2025-09-12T07:12:21.151368",
-     "exception": false,
-     "start_time": "2025-09-12T07:12:15.686357",
+     "start_time": "2025-09-12T07:13:35.010224",
      "status": "completed"
     },
     "tags": []
@@ -201,7 +178,7 @@
       "Requirement already satisfied: intel-cmplr-lib-rt in /usr/local/lib/python3.11/dist-packages (from mkl_umath->numpy>=1.24->rasterio) (2024.2.0)\r\n",
       "Requirement already satisfied: intel-cmplr-lib-ur==2024.2.0 in /usr/local/lib/python3.11/dist-packages (from intel-openmp<2026,>=2024->mkl->numpy>=1.24->rasterio) (2024.2.0)\r\n",
       "Downloading rasterio-1.4.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (22.2 MB)\r\n",
-      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m22.2/22.2 MB\u001b[0m \u001b[31m68.4 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
+      "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m22.2/22.2 MB\u001b[0m \u001b[31m17.0 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n",
       "\u001b[?25hDownloading affine-2.4.0-py3-none-any.whl (15 kB)\r\n",
       "Installing collected packages: affine, rasterio\r\n",
       "Successfully installed affine-2.4.0 rasterio-1.4.3\r\n",
@@ -215,84 +192,23 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 4,
-   "id": "2fa1694e",
-   "metadata": {
-    "execution": {
-     "iopub.execute_input": "2025-09-12T07:12:21.164482Z",
-     "iopub.status.busy": "2025-09-12T07:12:21.163493Z",
-     "iopub.status.idle": "2025-09-12T07:12:25.153646Z",
-     "shell.execute_reply": "2025-09-12T07:12:25.152499Z"
-    },
-    "papermill": {
-     "duration": 3.998518,
-     "end_time": "2025-09-12T07:12:25.155403",
-     "exception": false,
-     "start_time": "2025-09-12T07:12:21.156885",
-     "status": "completed"
-    },
-    "tags": []
-   },
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Requirement already satisfied: rasterio in /usr/local/lib/python3.11/dist-packages (1.4.3)\r\n",
-      "Requirement already satisfied: matplotlib in /usr/local/lib/python3.11/dist-packages (3.7.2)\r\n",
-      "Requirement already satisfied: affine in /usr/local/lib/python3.11/dist-packages (from rasterio) (2.4.0)\r\n",
-      "Requirement already satisfied: attrs in /usr/local/lib/python3.11/dist-packages (from rasterio) (25.3.0)\r\n",
-      "Requirement already satisfied: certifi in /usr/local/lib/python3.11/dist-packages (from rasterio) (2025.6.15)\r\n",
-      "Requirement already satisfied: click>=4.0 in /usr/local/lib/python3.11/dist-packages (from rasterio) (8.2.1)\r\n",
-      "Requirement already satisfied: cligj>=0.5 in /usr/local/lib/python3.11/dist-packages (from rasterio) (0.7.2)\r\n",
-      "Requirement already satisfied: numpy>=1.24 in /usr/local/lib/python3.11/dist-packages (from rasterio) (1.26.4)\r\n",
-      "Requirement already satisfied: click-plugins in /usr/local/lib/python3.11/dist-packages (from rasterio) (1.1.1.2)\r\n",
-      "Requirement already satisfied: pyparsing in /usr/local/lib/python3.11/dist-packages (from rasterio) (3.0.9)\r\n",
-      "Requirement already satisfied: contourpy>=1.0.1 in /usr/local/lib/python3.11/dist-packages (from matplotlib) (1.3.2)\r\n",
-      "Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.11/dist-packages (from matplotlib) (0.12.1)\r\n",
-      "Requirement already satisfied: fonttools>=4.22.0 in /usr/local/lib/python3.11/dist-packages (from matplotlib) (4.58.4)\r\n",
-      "Requirement already satisfied: kiwisolver>=1.0.1 in /usr/local/lib/python3.11/dist-packages (from matplotlib) (1.4.8)\r\n",
-      "Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.11/dist-packages (from matplotlib) (25.0)\r\n",
-      "Requirement already satisfied: pillow>=6.2.0 in /usr/local/lib/python3.11/dist-packages (from matplotlib) (11.2.1)\r\n",
-      "Requirement already satisfied: python-dateutil>=2.7 in /usr/local/lib/python3.11/dist-packages (from matplotlib) (2.9.0.post0)\r\n",
-      "Requirement already satisfied: mkl_fft in /usr/local/lib/python3.11/dist-packages (from numpy>=1.24->rasterio) (1.3.8)\r\n",
-      "Requirement already satisfied: mkl_random in /usr/local/lib/python3.11/dist-packages (from numpy>=1.24->rasterio) (1.2.4)\r\n",
-      "Requirement already satisfied: mkl_umath in /usr/local/lib/python3.11/dist-packages (from numpy>=1.24->rasterio) (0.1.1)\r\n",
-      "Requirement already satisfied: mkl in /usr/local/lib/python3.11/dist-packages (from numpy>=1.24->rasterio) (2025.2.0)\r\n",
-      "Requirement already satisfied: tbb4py in /usr/local/lib/python3.11/dist-packages (from numpy>=1.24->rasterio) (2022.2.0)\r\n",
-      "Requirement already satisfied: mkl-service in /usr/local/lib/python3.11/dist-packages (from numpy>=1.24->rasterio) (2.4.1)\r\n",
-      "Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.11/dist-packages (from python-dateutil>=2.7->matplotlib) (1.17.0)\r\n",
-      "Requirement already satisfied: intel-openmp<2026,>=2024 in /usr/local/lib/python3.11/dist-packages (from mkl->numpy>=1.24->rasterio) (2024.2.0)\r\n",
-      "Requirement already satisfied: tbb==2022.* in /usr/local/lib/python3.11/dist-packages (from mkl->numpy>=1.24->rasterio) (2022.2.0)\r\n",
-      "Requirement already satisfied: tcmlib==1.* in /usr/local/lib/python3.11/dist-packages (from tbb==2022.*->mkl->numpy>=1.24->rasterio) (1.4.0)\r\n",
-      "Requirement already satisfied: intel-cmplr-lib-rt in /usr/local/lib/python3.11/dist-packages (from mkl_umath->numpy>=1.24->rasterio) (2024.2.0)\r\n",
-      "Requirement already satisfied: intel-cmplr-lib-ur==2024.2.0 in /usr/local/lib/python3.11/dist-packages (from intel-openmp<2026,>=2024->mkl->numpy>=1.24->rasterio) (2024.2.0)\r\n",
-      "Note: you may need to restart the kernel to use updated packages.\n"
-     ]
-    }
-   ],
-   "source": [
-    "pip install rasterio matplotlib"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 5,
-   "id": "95314674",
+   "execution_count": 3,
+   "id": "51ec96a1",
    "metadata": {
     "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
+    "_kg_hide-input": true,
     "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
     "execution": {
-     "iopub.execute_input": "2025-09-12T07:12:25.167948Z",
-     "iopub.status.busy": "2025-09-12T07:12:25.167605Z",
-     "iopub.status.idle": "2025-09-12T07:12:27.429961Z",
-     "shell.execute_reply": "2025-09-12T07:12:27.428697Z"
+     "iopub.execute_input": "2025-09-12T07:13:41.406199Z",
+     "iopub.status.busy": "2025-09-12T07:13:41.405854Z",
+     "iopub.status.idle": "2025-09-12T07:13:43.830014Z",
+     "shell.execute_reply": "2025-09-12T07:13:43.828919Z"
     },
     "papermill": {
-     "duration": 2.271009,
-     "end_time": "2025-09-12T07:12:27.432029",
+     "duration": 2.433268,
+     "end_time": "2025-09-12T07:13:43.832500",
      "exception": false,
-     "start_time": "2025-09-12T07:12:25.161020",
+     "start_time": "2025-09-12T07:13:41.399232",
      "status": "completed"
     },
     "tags": []
@@ -310,20 +226,20 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 6,
-   "id": "53daffd4",
+   "execution_count": 4,
+   "id": "007bc0b4",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2025-09-12T07:12:27.445848Z",
-     "iopub.status.busy": "2025-09-12T07:12:27.445145Z",
-     "iopub.status.idle": "2025-09-12T07:12:33.005711Z",
-     "shell.execute_reply": "2025-09-12T07:12:33.004496Z"
+     "iopub.execute_input": "2025-09-12T07:13:43.845633Z",
+     "iopub.status.busy": "2025-09-12T07:13:43.845117Z",
+     "iopub.status.idle": "2025-09-12T07:13:49.105522Z",
+     "shell.execute_reply": "2025-09-12T07:13:49.104364Z"
     },
     "papermill": {
-     "duration": 5.584528,
-     "end_time": "2025-09-12T07:12:33.022636",
+     "duration": 5.284357,
+     "end_time": "2025-09-12T07:13:49.122595",
      "exception": false,
-     "start_time": "2025-09-12T07:12:27.438108",
+     "start_time": "2025-09-12T07:13:43.838238",
      "status": "completed"
     },
     "tags": []
@@ -469,14 +385,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 35.651083,
-   "end_time": "2025-09-12T07:12:33.766659",
+   "duration": 32.063675,
+   "end_time": "2025-09-12T07:13:49.868120",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2025-09-12T07:11:58.115576",
+   "start_time": "2025-09-12T07:13:17.804445",
    "version": "2.6.0"
   }
  },
